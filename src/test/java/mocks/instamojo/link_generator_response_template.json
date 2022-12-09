@@ -1,0 +1,24 @@
+{
+  "payment_request": {
+    "status": "Pending",
+    "allow_repeated_payments": false,
+    "buyer_name": "igm",
+    "modified_at": "2022-08-29T13:39:13.447253Z",
+    "send_email": false,
+    "webhook": "http://api-gateway-testevents.proxy.dev.dunzo.com/api/gateway/proxy/payment/v1/process-callback/provider/instamojo/order/682076641661780353300/source/PWA_WEB-v2.0.0/action/default/",
+    "created_at": "2022-08-29T13:39:13.447237Z",
+    "send_sms": false,
+    "sms_status": null,
+    "expires_at": null,
+    "email": null,
+    "phone": "+919555092375",
+    "amount": "200.00",
+    "shorturl": null,
+    "purpose": "dunzo - igm `s task",
+    "redirect_url": null,
+    "email_status": null,
+    "id": "06dba11e8e8a4ce0bf4e54e40e013cd2",
+    "longurl": "https://test.instamojo.com/@tasneem/06dba11e8e8a4ce0bf4e54e40e013cd2"
+  },
+  "success": true
+}

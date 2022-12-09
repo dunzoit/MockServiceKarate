@@ -1,0 +1,45 @@
+{
+  "request_id": "fcc87cc9-0cce-4639-845a-2538ff1458b8",
+  "pickup_details": [
+    {
+      "address": {
+        "street_address_1": "enim ut nulla",
+        "street_address_2": "enim ut nulla",
+        "lat": 12.908136,
+        "lng": 77.647606,
+        "contact_details": {
+          "name": "ex",
+          "phone_number": "est culpa ipsum anim cupidatat"
+        },
+        "pincode": "0?E",
+        "state": "",
+        "city": "Bengaluru",
+        "country": "India",
+        "apartment_address": "W"
+      },
+      "reference_id": "b4670287-8233-4ef5-b32f-8b7e6efdee1f"
+    }
+  ],
+  "drop_details": [
+    {
+      "reference_id": "86d60c54-2a29-4ad3-a3d6-33943bfed07b",
+      "address": {
+        "street_address_1": "dolor esse veniam culpa",
+        "contact_details": {
+          "name": "nulla dolor qui",
+          "phone_number": "pariatur"
+        },
+        "lat": 12.959172,
+        "lng": 77.697418,
+        "city": "Bengaluru",
+        "apartment_address": "efhD6,VeU"
+      },
+      "payment_data" : {
+        "payment_method": "COD",
+        "amount": 100
+      }
+    }
+  ],
+  "payment_method": "COD",
+  "optimised_route": false
+}
