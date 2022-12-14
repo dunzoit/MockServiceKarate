@@ -36,7 +36,7 @@ Feature: Instamojo mock for automation
     * def responseStatus = 200
     * def webhook_response = webhook_response_template
     * webhook_response.payment_request_id = paymentId
-    * webhook_response.buyer_name = names
+    * webhook_response.buyer_name = name
     * webhook_response.buyer_phone = phone_number
     * webhook_response.amount = request_amount
     * webhook_response.longurl = long_temp_url
