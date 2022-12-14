@@ -12,14 +12,12 @@ Feature: Instamojo mock for automation
     # reading request
     * def incoming_request = request
     * print 'Captured request from caller : ', incoming_request
-    * def parsed_request_array = incoming_request.split('&')
-    * print 'Parsed request from caller : ', parsed_request_array
-    * def webhook_url = parsed_request_array[4]
-    * def request_amount = parsed_request_array[6]
-    * def phone_number = parsed_request_array[2]
-    * def purpose = parsed_request_array[7]
-    * def name = parsed_request_array[1]
-    * def allow_repeated_payments = parsed_request_array[0]
+    * def webhook_url = incoming_request.webhook
+    * def request_amount = incoming_request.amount
+    * def phone_number = incoming_request.phone
+    * def purpose = incoming_request.purpose
+    * def name = incoming_request.buyer_name
+    * def allow_repeated_payment = incoming_request.allow_repeated_payments
 
       # updating response
     * def payment_request = link_generator_response_template.payment_request
@@ -46,5 +44,4 @@ Feature: Instamojo mock for automation
     * webhook_response.payment_id = 'MOJO'+id
     * print 'Webhook callback response: ', webhook_response
     * sleep(1000)
-
     * karate.call('webhook-updater.feature', { webhook_url: webhook_url, request_body: webhook_response })
